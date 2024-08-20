@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+    <html>
+    <head>
+    <title>Login Page</title>
+        <meta charset="UTF-8">
+        <met name = "viewpoint" content="width-device-width, initial-scale-1.0">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="task.html">Task Dashboard</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="register.html">Register</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <form>
+            <div>
+                <h2 class="text-center">Login</h2>
+                <p class="mb-2">New user?<a href="register.html"> Register here!</a></p></p>
+                    <label for="exampleInput">Email address</label>
+                    <input type="email" id="exampleInput" aria-describedby="email" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide a correct email.</div>
+            </div>
+            <div class="mb-3">
+                <label for="passwordinput">Password</label>
+                <input type="password" id="passwordinput" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a correct password.</div>
+            </div>
+                  <button type="submit">Login</button>
+                </form>
+
+
+    <footer class="bg-dark text-white mt-5 mb-2">
+        <p>© Task Management Application, 2024</p>
+    </footer>
+
+</body>
+</html>
