@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+    <html>
+    <head>
+    <title>Task Dashboard</title>
+        <meta charset="UTF-8">
+        <met name = "viewpoint" content="width-device-width, initial-scale-1.0">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="task.html">Task Dashboard</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="register.html">Register</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h2 class="display-5 text-center mt-2">Create New Task</h2>
+            <form>
+                <div class="form-group">
+                    <label for="title" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="title" placeholder:="Enter title of task: " required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="details" class="form-label">Task Details</label>
+                    <textarea type="text" class="form-control" id="details" row="3" placeholder:="Enter details: " required></textarea>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="date" class="form-label">Due date:</label>
+                    <input type="date" class="form-control" id="date" placeholder:="Enter due date: ">
+
+                <div class="form-group mt-4">
+                    <label for="priority" class="form-label">Priority:</label>
+                    <select class="form-control" id="priority">
+                        <option selected disabled>Pick Priority of task:</option>
+                        <option value="low text-danger">Low</option>
+                        <option value="medium text-danger">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success mt-4">Create New Task</button>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <h2 class="display-5 text-center">Edit Task</h2>
+            <form>
+                <div class="form group">
+                    <label for="title">Task Title</label>
+                    <input type="text" class="form-control" id="title" value="Current Task Title" placeholder:="Enter new title for task: ">
+                    <div class="form-group mt-4">
+                        <label for="details" class="form-label">Task Details</label>
+                        <textarea type="text" class="form-control" id="details" row="3" placeholder:="Enter details: " required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-4">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="mt-4">
+        <a href="task.html" class="btn btn-primary">Dashboard</a>
+        <a href="taskdetails.html" class="btn btn-secondary">View Details</a>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 mb-2">
+        <p> © 2024 Task Management Application</p>
+    </footer>
+</body>
+</html>
